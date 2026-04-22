@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClickVitrine</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <header>
+        <div class="logo">🛒 Click<span>Vitrine</span></div>
+    </header>
+
+    <main id="app">
+        <section id="login-screen">
+            <h2>Acesse sua Vitrine Inteligente</h2>
+            <p>Comece a vender pelo Zap agora</p>
+            <input type="text" id="login-input" placeholder="E-mail ou Telefone">
+            <button onclick="showDashboard()">ENVIAR CÓDIGO DE ACESSO</button>
+            <button class="btn-whatsapp">Acessar via WhatsApp</button>
+        </section>
+
+        <section id="dashboard" style="display:none;">
+            <h2>Cadastrar Produto</h2>
+            <div class="upload-area">📸 Adicionar Foto/Vídeo (5s)</div>
+            <input type="text" id="prod-name" placeholder="Nome do Produto">
+            <textarea id="prod-desc" maxlength="70" placeholder="Descrição (máx 70 letras)"></textarea>
+            <input type="number" id="prod-price" placeholder="Preço R$">
+            <button onclick="alert('Produto Salvo!')">SALVAR NA VITRINE</button>
+            
+            <div class="coupons">
+                <h3>🎫 Cupons de Desconto</h3>
+                <button onclick="alert('Novo cupom criado!')">+ Novo Cupom</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>CRIADOR: JOANDERSON SILVA</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
